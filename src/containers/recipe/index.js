@@ -1,13 +1,13 @@
 import Axios from 'axios';
-import { Button } from '@chakra-ui/react';
 import './style.css';
 import { useState } from 'react';
 import { RecipeTile } from '../../components';
 
-
+const YOUR_APP_ID = ''
+const YOUR_APP_KEY = ''
 const HealthLabelsConst=[ "vegan", "vegetarian", "paleo", "dairy-free", "gluten-free", "wheat-free", "fat-free", "low-sugar", "egg-free", "peanut-free", "tree-nut-free", "soy-free", "fish-free", "shellfish-free"]
 
-export default function Recipe() {
+export default function Recipe({setselectedRecipe}) {
     const [query, setQuery] = useState('')
     const [recipeArray, setRecipeArray] = useState([])
     const [healthLabel, sethealthLabel] = useState('')
@@ -53,7 +53,7 @@ export default function Recipe() {
             <div className="Recipe_recipescontainer">
                 <div className="Recipe_recipesGrid">
                     {
-                        recipeArray.map((data) => <RecipeTile data={data} key={data['recipe']['shareAs']}/>)
+                        recipeArray.map((data) => <RecipeTile data={data} setselectedRecipe={setselectedRecipe} key={data['recipe']['shareAs']}/>)
                     }
                 </div>
             </div>

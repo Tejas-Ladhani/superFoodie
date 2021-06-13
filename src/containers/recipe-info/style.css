@@ -1,0 +1,18 @@
+.RecipeInfo{
+    display:flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    min-width: 30vw;
+}
+.RecipeInfo__HealthTags{
+    background-color: rgb(75, 75, 75);
+    padding: 2px 6px;
+    color: white;
+    border-radius: 3px;
+    margin: 4px 6px;
+   line-break: strict;
+   word-break: keep-all;
+   display: inline-block;
+}

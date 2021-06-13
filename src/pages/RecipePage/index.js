@@ -1,7 +1,12 @@
-import { Recipe } from '../../containers';
+import { useState } from 'react';
+import { Recipe, RecipeInfo, } from '../../containers';
 
 export default function RecipePage() {
+    const [selectedRecipe, setselectedRecipe] = useState(null);
     return (
-        <Recipe />
+        <>
+        <Recipe setselectedRecipe={setselectedRecipe}/>
+        {selectedRecipe!==null?<RecipeInfo selectedRecipe={selectedRecipe}/>:<></>}
+        </>
     )
 }

@@ -1,13 +1,13 @@
 import './style.css';
 
-export default function RecipeTile({data}) {
+export default function RecipeTile({data,setselectedRecipe}) {
   return (
-    <div className="RecipeTile" >
-      <a href={data['recipe']['shareAs']}>
+    <div className="RecipeTile" onClick={()=>setselectedRecipe(data)} >
+     
       <img src={data['recipe']['image']} alt={data['recipe']['label']} />
       <hr></hr>
       <p className="RecipeTile__label">{data['recipe']['label']}</p>
-      </a>
+      
     </div>
   )
 }
