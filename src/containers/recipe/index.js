@@ -3,8 +3,8 @@ import './style.css';
 import { useState } from 'react';
 import { RecipeTile } from '../../components';
 
-const YOUR_APP_ID = ''
-const YOUR_APP_KEY = ''
+const YOUR_APP_ID = 'fbac213f'
+const YOUR_APP_KEY = '2b70b7ade28eb92028b133437d957a6c'
 const HealthLabelsConst=[ "vegan", "vegetarian", "paleo", "dairy-free", "gluten-free", "wheat-free", "fat-free", "low-sugar", "egg-free", "peanut-free", "tree-nut-free", "soy-free", "fish-free", "shellfish-free"]
 
 export default function Recipe({setselectedRecipe}) {
