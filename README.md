@@ -16,7 +16,7 @@
   <h3 align="center">SuperFoodie</h3>
 
   <p align="center">
-   Keeps you Financially Fit.what is summer without food & music.😍🤩
+   summer with food & music.😍🤩
     <br />
     <a href="https://tejas-ladhani.github.io/superFoodie/">View Demo</a>
     ·
