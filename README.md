@@ -16,7 +16,7 @@
   <h3 align="center">SuperFoodie</h3>
 
   <p align="center">
-     Enjoy summer with ur Fav food and Music 😍🤩. 
+   Keeps you Financially Fit.what is summer without food & music.😍🤩
     <br />
     <a href="https://tejas-ladhani.github.io/superFoodie/">View Demo</a>
     ·
@@ -29,10 +29,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
 A web application where you can listen to FM music/Radio and find your favorite recipes at the same time. What better thing to do on a hot summer day😎.
 
-<img src="./Im3.PNG">
-<img src="./Im2.PNG">
+<img src="./Im3.PNG" />
+<img src="./Im2.PNG" />
 
 
 ### Built With
@@ -41,9 +42,7 @@ A web application where you can listen to FM music/Radio and find your favorite 
 * [radio-browser-api](https://www.npmjs.com/package/radio-browser-api)
 * [react-h5-audio-player](https://www.npmjs.com/package/react-h5-audio-player)
 * [edamam food api](https://developer.edamam.com/)
-
-
-
+)
 
 
 <!-- GETTING STARTED -->
@@ -57,18 +56,14 @@ A web application where you can listen to FM music/Radio and find your favorite 
    ```sh
    npm install
    ```
-   or
-
-    ```sh
-   yarn installl
+   ```sh
+   yarn install
    ```
+3. Create edamam app & get API keys from [https://developer.edamam.com/](https://developer.edamam.com/)
 
-3. Create edamam app on official website & get API keys from [developer.edamam.com/](https://developer.edamam.com/)
-
-4. Enter your API in `/src/containers/recipe/index.js`
+4. Enter your API in `./src/containers/recipe/index.js`
    ```JS
-  const YOUR_APP_ID = 'ENTER YOUR API';
-  const YOUR_APP_KEY = 'ENTER YOUR API';
+   const YOUR_API_KEY = 'ENTER YOUR API';
    ```
 
 5. In the project directory, you can run:
