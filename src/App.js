@@ -8,7 +8,7 @@ function App() {
   return (
     <ChakraProvider>
           <NavBar />
-          <Music />
+       
           <div className="App">
           <Radio />
           <RecipePage />

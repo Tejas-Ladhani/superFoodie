@@ -1,37 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-.App{
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
 .radio{
-  border: 2px solid #fb743e;
-  padding: 40px;
+  border: 1px solid #eee8e8;
   border-radius: 10px;
-}
-.filters {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2em;
-  font-size: 0.8rem;
-  
+  /* background-color: black; */
 }
 
-.filters:hover {
-  cursor: pointer;
-  background: linear-gradient(to bottom right, #faef52, #ffbf49);
-}
-
-.filters span {
-  margin: 0 0.25em;
-  border: 1px solid #dd74ae;
-  border-radius: 10px;
-  padding: 0.25em 0.75em;
-}
-.filters .selected {
-  background: linear-gradient(to bottom right, #e36bae, #fb743e);
-}
 
 .stations {
     display: flex;
@@ -46,13 +20,12 @@
   
 .station {
   font-size: 1rem;
-  border: 3px solid rgb(168, 109, 250);
+  border: 1px solid rgb(48, 46, 49);
   margin: 0.35em;
-  border-radius: 200px;
-  padding: 3em;
+  padding: 12px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border-radius: 2px;
+ 
   gap: 10px;
   align-items: center;
   
@@ -60,7 +33,7 @@
 
 .station:hover {
   border-color: #fc0000;
-  background-image: linear-gradient(to top, hsl(182, 100%, 61%), #dce74291);
+  
 }
 
 .station:visited{
@@ -72,26 +45,22 @@ audio {
 }
 
 .name {
-    width: 100%;
+   background-color: white;
     text-align: center;
     font-size: small;
-    font-family: 'Pacifico', cursive;
+   
   }
 
 .stationName img {
-  display: block;
-  width: 4em;
-  height:4em;
-  border: 3px solid rgb(255, 243, 82);
-  margin: 0em 0em 0em 0em;
+  margin: 0;
 }
 
 
 .rhap_container.player {
-    background-color: rgb(255, 237, 132);
+    background-color:transparent;
     display: flex;
     justify-items: center;
-    padding: 0.25em 0.25em;
+
     border-radius: 10px;
     width: 200px;
   }

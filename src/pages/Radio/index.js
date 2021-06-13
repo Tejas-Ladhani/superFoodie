@@ -61,29 +61,20 @@ export default function Radio() {
 
   return (
     <div className="radio">
-      {/* <div className="filters">
-        {filters.map((filter) => (
-          <span
-            className={stationFilter === filter ? "selected" : ""}
-            onClick={() => setStationFilter(filter)}
-          >
-            {filter}
-          </span>
-        ))}
-      </div> */}
+     
       <div className="stations">
         {stations &&
           stations.map((station, index) => {
             return (  
-              <div className="station" key={index}>
-                <div className="stationName">
+              <div className="station" key={index} style={{backgroundImage: `url(${station.favicon})`}}>
+                {/* <div className="stationName">
                   <img
                     className="logo"
                     src={station.favicon}
                     alt="station logo"
                     onError={setDefaultSrc}
                   />
-                </div>
+                </div> */}
                 <div className="name">{station.name}</div>
                 <AudioPlayer
                   className="player"
@@ -91,7 +82,7 @@ export default function Radio() {
                   showJumpControls={false}
                   layout="stacked"
                   customProgressBarSection={[]}
-                  customControlsSection={["MAIN_CONTROLS", "VOLUME_CONTROLS"]}
+                  customControlsSection={["MAIN_CONTROLS"]}
                   autoPlayAfterSrcChange={true}
                 />
               </div>
