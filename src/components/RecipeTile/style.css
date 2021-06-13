@@ -1,0 +1,14 @@
+.RecipeTile{
+    margin: 6px 8px;
+    border: 1px solid rgb(100, 100, 100);
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 3px 2px 2px rgb(148, 148, 148);
+    cursor:pointer;
+}
+.RecipeTile>img{
+    object-fit:contain;
+}
+.RecipeTile__label{
+    text-align: center;
+}

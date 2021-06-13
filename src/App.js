@@ -1,6 +1,8 @@
 import "./App.css";
-import { Box, ChakraProvider } from "@chakra-ui/react";
 import Radio from "./pages/Radio/index";
+import { ChakraProvider,Box } from "@chakra-ui/react"
+import { RecipePage } from './pages';
+import { NavBar } from './containers';
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <div className="App">
           <Radio />
       </div>
+      <NavBar />
+      <RecipePage />
     </ChakraProvider>
   );
 }
