@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/superFoodie/static/css/main.b07fda2d.chunk.css",
+    "main.js": "/superFoodie/static/js/main.02b67333.chunk.js",
+    "main.js.map": "/superFoodie/static/js/main.02b67333.chunk.js.map",
+    "runtime-main.js": "/superFoodie/static/js/runtime-main.de041ab1.js",
+    "runtime-main.js.map": "/superFoodie/static/js/runtime-main.de041ab1.js.map",
+    "static/css/2.a83cbf69.chunk.css": "/superFoodie/static/css/2.a83cbf69.chunk.css",
+    "static/js/2.17d91b14.chunk.js": "/superFoodie/static/js/2.17d91b14.chunk.js",
+    "static/js/2.17d91b14.chunk.js.map": "/superFoodie/static/js/2.17d91b14.chunk.js.map",
+    "static/js/3.f2ed466a.chunk.js": "/superFoodie/static/js/3.f2ed466a.chunk.js",
+    "static/js/3.f2ed466a.chunk.js.map": "/superFoodie/static/js/3.f2ed466a.chunk.js.map",
+    "index.html": "/superFoodie/index.html",
+    "static/css/2.a83cbf69.chunk.css.map": "/superFoodie/static/css/2.a83cbf69.chunk.css.map",
+    "static/css/main.b07fda2d.chunk.css.map": "/superFoodie/static/css/main.b07fda2d.chunk.css.map",
+    "static/js/2.17d91b14.chunk.js.LICENSE.txt": "/superFoodie/static/js/2.17d91b14.chunk.js.LICENSE.txt",
+    "static/media/beach-radio.74ccd911.jpg": "/superFoodie/static/media/beach-radio.74ccd911.jpg",
+    "static/media/beach-radioo.de93ed56.jpg": "/superFoodie/static/media/beach-radioo.de93ed56.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de041ab1.js",
+    "static/css/2.a83cbf69.chunk.css",
+    "static/js/2.17d91b14.chunk.js",
+    "static/css/main.b07fda2d.chunk.css",
+    "static/js/main.02b67333.chunk.js"
+  ]
+}
