@@ -1,80 +1,137 @@
-# SuperFoodie
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-## This application helps you find your favourite recipies & listen to music at the same time 😎.
-<img src="./Im.PNG">
-<img src="./Im2.PNG">
+
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="">
+    <img src="./public/favicon.ico" alt="Logo" width="auto" height="120">
+  </a>
+
+  <h3 align="center">SuperFoodie</h3>
+
+  <p align="center">
+     Enjoy summer with ur Fav food and Music 😍🤩. 
+    <br />
+    <a href="https://tejas-ladhani.github.io/superFoodie/">View Demo</a>
+    ·
+    <a href="https://github.com/Tejas-Ladhani/superFoodie/issues">Report Bug</a>
+    ·
+  </p>
+</p>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+A web application where you can listen to FM music/Radio and find your favorite recipes at the same time. What better thing to do on a hot summer day😎.
+
 <img src="./Im3.PNG">
+<img src="./Im2.PNG">
+
+
+### Built With
+
+* [ReactJs](https://reactjs.org/)
+* [radio-browser-api](https://www.npmjs.com/package/radio-browser-api)
+* [react-h5-audio-player](https://www.npmjs.com/package/react-h5-audio-player)
+* [edamam food api](https://developer.edamam.com/)
 
 
 
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- GETTING STARTED -->
+## Getting Started
 
-## Available Scripts
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Tejas-Ladhani/superFoodie.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+   or
 
-In the project directory, you can run:
+    ```sh
+   yarn installl
+   ```
 
-### `yarn start`
+3. Create edamam app on official website & get API keys from [developer.edamam.com/](https://developer.edamam.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Enter your API in `/src/containers/recipe/index.js`
+   ```JS
+  const YOUR_APP_ID = 'ENTER YOUR API';
+  const YOUR_APP_KEY = 'ENTER YOUR API';
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+5. In the project directory, you can run:
 
-### `yarn test`
+  * `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+      Runs the app in the development mode.\
+      Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `yarn build`
+      The page will reload if you make edits.\
+      You will also see any lint errors in the console.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * `npm test`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+      Launches the test runner in the interactive watch mode.\
+      See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  * `npm run build`
 
-### `yarn eject`
+      Builds the app for production to the `build` folder.\
+      It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+      The build is minified and the filenames include the hashes.\
+      Your app is ready to be deployed!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- ROADMAP -->
+## Roadmap
 
-## Learn More
+See the [open issues](https://github.com/Tejas-Ladhani/superFoodie/issues) for a list of proposed features (and known issues).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<!-- CONTRIBUTING -->
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Analyzing the Bundle Size
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- LICENSE -->
+## License
 
-### Advanced Configuration
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Tejas-Ladhani/superFoodie.svg?style=for-the-badge
+[contributors-url]:https://github.com/Tejas-Ladhani/superFoodie/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Tejas-Ladhani/superFoodie.svg?style=for-the-badge
+[forks-url]:https://github.com/Tejas-Ladhani/superFoodie/network/members
+[stars-shield]: https://img.shields.io/github/stars/Tejas-Ladhani/superFoodie.svg?style=for-the-badge
+[stars-url]:https://github.com/Tejas-Ladhani/superFoodie/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Tejas-Ladhani/superFoodie.svg?style=for-the-badge
+[issues-url]:https://github.com/Tejas-Ladhani/superFoodie/issues
+[license-shield]: https://img.shields.io/github/license/Tejas-Ladhani/superFoodie.svg?style=for-the-badge
+[license-url]:https://github.com/Tejas-Ladhani/superFoodie/blob/master/LICENSE.txt
+[product-screenshot]: images/screenshot.png
