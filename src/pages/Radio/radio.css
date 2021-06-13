@@ -1,4 +1,72 @@
-.radio{ 
-    /* position: fixed;
-    top:0; */
-}
+
+
+.radio{
+    border: 1px solid #eee8e8;
+    border-radius: 10px;
+    /* background-color: black; */
+  }
+  
+  
+  .stations {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+  
+     .stations::-webkit-scrollbar{
+      margin-top: 10px;
+    } 
+  
+    
+  .station {
+    font-size: 1rem;
+    border: 1px solid rgb(48, 46, 49);
+    margin: 0.35em;
+    padding: 12px;
+    display: flex;
+    border-radius: 2px;
+   
+    gap: 10px;
+    align-items: center;
+    
+  }
+  
+  .station:hover {
+    border-color: #fc0000;
+    
+  }
+  
+  audio {
+    width: 100%;
+  }
+  
+  .name {
+     background-color: white;
+      text-align: center;
+      font-size: small;
+     
+    }
+  
+  .stationName img {
+    margin: 0;
+  }
+  
+  
+  .rhap_container.player {
+      background-color:transparent;
+      display: flex;
+      justify-items: center;
+  
+      border-radius: 10px;
+      width: 200px;
+    }
+    
+    .rhap_stacked .rhap_controls-section {
+      margin-top: 0 !important;
+  
+    }
+    
+    .rhap_controls-section .rhap_volume-controls {
+      justify-content: center;
+    }
+    

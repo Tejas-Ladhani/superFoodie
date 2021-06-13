@@ -4,7 +4,6 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import imageradio from "../../assets/beach-radioo.jpg";
 import radioimg from "../../assets/beach-radio.jpg";
-import ScrollMenu from 'react-horizontal-scrolling-menu';
 import "./radio.css";
 
 export default function Radio() {
@@ -66,15 +65,8 @@ export default function Radio() {
         {stations &&
           stations.map((station, index) => {
             return (  
-              <div className="station" key={index} style={{backgroundImage: `url(${station.favicon})`}}>
-                {/* <div className="stationName">
-                  <img
-                    className="logo"
-                    src={station.favicon}
-                    alt="station logo"
-                    onError={setDefaultSrc}
-                  />
-                </div> */}
+              <div className="station" key={index} style={{backgroundImage: `url(${station.favicon})`}} >
+               
                 <div className="name">{station.name}</div>
                 <AudioPlayer
                   className="player"
