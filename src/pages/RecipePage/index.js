@@ -6,7 +6,7 @@ export default function RecipePage() {
     return (
         <>
         <Recipe setselectedRecipe={setselectedRecipe}/>
-        {selectedRecipe!==null?<RecipeInfo selectedRecipe={selectedRecipe}/>:<></>}
+        {selectedRecipe!==null?<RecipeInfo selectedRecipe={selectedRecipe} setselectedRecipe={setselectedRecipe}/>:<></>}
         </>
     )
 }
