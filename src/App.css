@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+.App{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.radio{
+  border: 2px solid #fb743e;
+  padding: 40px;
+  border-radius: 10px;
+}
 .filters {
   display: flex;
   justify-content: center;
@@ -29,9 +39,9 @@
     overflow-x: auto;
   }
 
-  .stations::-webkit-scrollbar{
-      display: none;
-  }
+   .stations::-webkit-scrollbar{
+    margin-top: 10px;
+  } 
 
   
 .station {

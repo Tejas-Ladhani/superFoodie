@@ -71,9 +71,6 @@ export default function Radio() {
           </span>
         ))}
       </div> */}
-      <div className="Scroll">
-        <ScrollMenu/>
-      </div>
       <div className="stations">
         {stations &&
           stations.map((station, index) => {
