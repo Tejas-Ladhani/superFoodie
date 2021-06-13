@@ -1,18 +1,9 @@
-#SuperFoodie
+# SuperFoodie
+
+## This application helps you find your favourite recipies & listen to music at the same time 😎.
 <img src="./Im.PNG">
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="./Im2.PNG">
+<img src="./Im3.PNG">
 
 
 
