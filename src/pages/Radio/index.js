@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { RadioBrowserApi } from "radio-browser-api";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import imageradio from "../assets/beach-radioo.jpg";
-import radioimg from "../assets/beach-radio.jpg";
+import imageradio from "../../assets/beach-radioo.jpg";
+import radioimg from "../../assets/beach-radio.jpg";
+import ScrollMenu from 'react-horizontal-scrolling-menu';
+import "./radio.css";
 
 export default function Radio() {
   const [stations, setStations] = useState();
@@ -23,7 +25,7 @@ export default function Radio() {
       .searchStations({
         language: "english",
         tag: stationFilter,
-        limit: 30,
+        limit: 40,
       })
       .then((data) => {
         return data;
@@ -59,7 +61,7 @@ export default function Radio() {
 
   return (
     <div className="radio">
-      <div className="filters">
+      {/* <div className="filters">
         {filters.map((filter) => (
           <span
             className={stationFilter === filter ? "selected" : ""}
@@ -68,11 +70,14 @@ export default function Radio() {
             {filter}
           </span>
         ))}
+      </div> */}
+      <div className="Scroll">
+        <ScrollMenu/>
       </div>
       <div className="stations">
         {stations &&
           stations.map((station, index) => {
-            return (
+            return (  
               <div className="station" key={index}>
                 <div className="stationName">
                   <img
@@ -81,9 +86,8 @@ export default function Radio() {
                     alt="station logo"
                     onError={setDefaultSrc}
                   />
-                  <div className="name">{station.name}</div>
                 </div>
-
+                <div className="name">{station.name}</div>
                 <AudioPlayer
                   className="player"
                   src={station.urlResolved}
@@ -91,7 +95,7 @@ export default function Radio() {
                   layout="stacked"
                   customProgressBarSection={[]}
                   customControlsSection={["MAIN_CONTROLS", "VOLUME_CONTROLS"]}
-                  autoPlayAfterSrcChange={false}
+                  autoPlayAfterSrcChange={true}
                 />
               </div>
             );

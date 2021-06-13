@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+  font-size: 0.8rem;
+  
+}
+
+.filters:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #faef52, #ffbf49);
+}
+
+.filters span {
+  margin: 0 0.25em;
+  border: 1px solid #dd74ae;
+  border-radius: 10px;
+  padding: 0.25em 0.75em;
+}
+.filters .selected {
+  background: linear-gradient(to bottom right, #e36bae, #fb743e);
+}
+
+.stations {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .stations::-webkit-scrollbar{
+      display: none;
+  }
+
+  
+.station {
+  font-size: 1rem;
+  border: 3px solid rgb(168, 109, 250);
+  margin: 0.35em;
+  border-radius: 200px;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+.station:hover {
+  border-color: #fc0000;
+  background-image: linear-gradient(to top, hsl(182, 100%, 61%), #dce74291);
+}
+
+.station:visited{
+   
+}
+
+audio {
+  width: 100%;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    font-size: small;
+    font-family: 'Pacifico', cursive;
+  }
+
+.stationName img {
+  display: block;
+  width: 4em;
+  height:4em;
+  border: 3px solid rgb(255, 243, 82);
+  margin: 0em 0em 0em 0em;
+}
+
+
+.rhap_container.player {
+    background-color: rgb(255, 237, 132);
+    display: flex;
+    justify-items: center;
+    padding: 0.25em 0.25em;
+    border-radius: 10px;
+    width: 200px;
+  }
+  
+  .rhap_stacked .rhap_controls-section {
+    margin-top: 0 !important;
+
+  }
+  
+  .rhap_controls-section .rhap_volume-controls {
+    justify-content: center;
+  }
+  
